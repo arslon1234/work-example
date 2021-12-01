@@ -1,0 +1,109 @@
+@import "../../global.scss";
+.footer {
+  height: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include small {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .footerLeft {
+    display: flex;
+    .leftOne {
+      display: flex;
+      flex-direction: column;
+      margin-left: 100px;
+      @include middle {
+        margin-left: 15px;
+      }
+      @include small {
+        margin-left: 15px;
+      }
+      span {
+        margin: 5px 0px;
+
+        a {
+          text-decoration: none;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 18px;
+          color: #1a1a1a;
+        }
+      }
+    }
+    .leftTwo {
+      display: flex;
+      flex-direction: column;
+      margin-left: 100px;
+      @include middle {
+        margin-left: 25px;
+      }
+      @include middle {
+        margin-left: 15px;
+      }
+      span {
+        margin: 5px 0px;
+
+        a {
+          text-decoration: none;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 18px;
+          color: #1a1a1a;
+        }
+      }
+    }
+  }
+  .footerRight {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    @include middle {
+      margin-right: 15px;
+    }
+    @include small {
+      margin-right: 15px;
+    }
+    .rightUp {
+      display: flex;
+      .uptitle {
+        display: flex;
+        flex-direction: column;
+        span {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 21px;
+          text-align: right;
+          color: #1a1a1a;
+          margin-right: 20px;
+          margin-bottom: 8px;
+          @include small {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .rightDown {
+      margin-top: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      i {
+        font-size: 27px;
+        margin-right: 15px;
+        cursor: pointer;
+        @include small {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

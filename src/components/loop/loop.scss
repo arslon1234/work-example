@@ -1,0 +1,59 @@
+@import "../../global.scss";
+.loop {
+  background-color: #ced3ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .loopItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    :nth-child(1) {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 34px;
+      line-height: 41px;
+      text-align: center;
+      color: #1a1a1a;
+      margin-bottom: 15px;
+      @include small {
+        font-size: 28px;
+      }
+    }
+    .loopTitle {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #1a1a1a;
+      @include small {
+        font-size: 15px;
+      }
+    }
+    .loopInput {
+      margin-top: 50px;
+      input {
+        width: 270px;
+        height: 40px;
+        outline: none;
+        font-size: 16px;
+        @include small {
+          font-size: 14px;
+          width: 220px;
+          height: 30px;
+        }
+      }
+      button {
+        height: 45px;
+        width: 50px;
+        cursor: pointer;
+        @include small {
+          height: 36px;
+        }
+      }
+    }
+  }
+}
